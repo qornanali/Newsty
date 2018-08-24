@@ -16,15 +16,17 @@
             android:orientation="vertical">
 
             <ImageView
-                android:id="@+id/iv_open_drawer"
+                android:onClick="onCvBrowseNewsClicked"
+                android:id="@+id/iv_open_browse"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentTop="true"
                 android:layout_margin="@dimen/activity_horizontal_margin"
-                android:src="@drawable/ic_action_dehaze" />
+                android:src="@drawable/ic_action_browse" />
 
             <ImageView
+                android:onClick="onIvOpenSearchClicked"
                 android:id="@+id/iv_open_search"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -87,8 +89,8 @@
                     android:padding="@dimen/activity_horizontal_margin_2">
 
                     <ImageView
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:layout_marginRight="@dimen/activity_horizontal_margin_2"
                         android:clickable="false"
                         android:src="@drawable/ic_arrow_forward" />

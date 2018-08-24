@@ -1,7 +1,5 @@
-package qornanali.newsty.features.headlines
+package qornanali.newsty.features.listsources
 
-import android.util.Log
-import android.widget.Toast
 import org.jetbrains.anko.doAsync
 import org.jetbrains.anko.uiThread
 import qornanali.newsty.api.ApiRepository
@@ -17,7 +15,7 @@ class ListSourcesPresenter(private val listSourcesView: ListSourcesView) {
                     TheNewsOrg.getSources(), GetSources::class.java)
 
             uiThread {
-                if(data?.status.equals("ok")){
+                if (data?.status.equals("ok")) {
                     listSourcesView.insertListSources(data?.sources)
                 }
                 listSourcesView.loadingData(false)

@@ -15,6 +15,7 @@
     <string name="do_share">Share news</string>
     <string name="do_mark">Mark news</string>
     <string name="do_browse">Browse other news</string>
+    <string name="do_search">Search</string>
     <string name="do_choose_sources">Choose news source</string>
 
     <string-array name="categories">
