@@ -9,6 +9,7 @@ import android.widget.ProgressBar
 import org.jetbrains.anko.find
 import org.jetbrains.anko.startActivity
 import qornanali.newsty.R
+import qornanali.newsty.features.detailarticle.DetailArticleActivity
 import qornanali.newsty.features.listsources.ListSourcesActivity
 import qornanali.newsty.model.Article
 import qornanali.newsty.util.OnItemClickListener
@@ -41,8 +42,6 @@ class HeadlinesActivity : AppCompatActivity(), HeadlinesView {
 
         init()
 
-        presenter = HeadlinesPresenter(this)
-
         presenter.getHeadlineArticles()
     }
 
@@ -55,10 +54,12 @@ class HeadlinesActivity : AppCompatActivity(), HeadlinesView {
 
         adapter = ListArticlesAdapter(articles)
         adapter.setOnItemClickListener(OnItemClickListener {
-
+            startActivity<DetailArticleActivity>("article" to it)
         })
 
         rvArticles.adapter = adapter
+
+        presenter = HeadlinesPresenter(this)
     }
 
     fun onCvBrowseNewsClicked(view: View){

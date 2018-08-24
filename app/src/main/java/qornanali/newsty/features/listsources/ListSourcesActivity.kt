@@ -45,8 +45,6 @@ class ListSourcesActivity : AppCompatActivity(), ListSourcesView {
 
         init()
 
-        presenter = ListSourcesPresenter(this)
-
         presenter.getSources()
     }
 
@@ -68,6 +66,8 @@ class ListSourcesActivity : AppCompatActivity(), ListSourcesView {
         })
 
         rvSources.adapter = adapter
+
+        presenter = ListSourcesPresenter(this)
     }
 
     override fun onOptionsItemSelected(item: MenuItem?): Boolean {
