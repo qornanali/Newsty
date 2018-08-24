@@ -37,6 +37,7 @@ class DetailArticleActivity : AppCompatActivity(), DetailArticleView {
         toolbar = find(R.id.toolbar)
         setSupportActionBar(toolbar)
         supportActionBar?.title = article.title
+        supportActionBar?.subtitle = article.url
         supportActionBar?.setDisplayShowHomeEnabled(true)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 

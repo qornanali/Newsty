@@ -11,8 +11,6 @@ import android.widget.ProgressBar
 import org.jetbrains.anko.find
 import org.jetbrains.anko.startActivity
 import qornanali.newsty.R
-import qornanali.newsty.features.headlines.ListSourcesPresenter
-import qornanali.newsty.features.headlines.ListSourcesView
 import qornanali.newsty.features.listarticles.ArticleBySourceActivity
 import qornanali.newsty.model.Source
 import qornanali.newsty.util.OnItemClickListener

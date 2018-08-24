@@ -1,4 +1,4 @@
-package qornanali.newsty.features.headlines
+package qornanali.newsty.features.listsources
 
 import qornanali.newsty.model.Source
 

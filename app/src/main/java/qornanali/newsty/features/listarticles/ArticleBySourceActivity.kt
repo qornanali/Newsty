@@ -5,10 +5,13 @@ import android.support.design.widget.TabLayout
 import android.support.v4.view.ViewPager
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.Toolbar
+import android.view.Menu
 import android.view.MenuItem
 import com.qornanali.footballclubkt.util.adapter.ListArticlesPagerAdapter
 import org.jetbrains.anko.find
+import org.jetbrains.anko.startActivity
 import qornanali.newsty.R
+import qornanali.newsty.features.searcharticles.SearchArticlesActivity
 import qornanali.newsty.model.Source
 
 class ArticleBySourceActivity : AppCompatActivity(), ArticleBySourceView {
@@ -60,10 +63,18 @@ class ArticleBySourceActivity : AppCompatActivity(), ArticleBySourceView {
         presenter = ArticleBySourcePresenter(this)
     }
 
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.menu_activity_articlebysource, menu)
+        return true
+    }
+
     override fun onOptionsItemSelected(item: MenuItem?): Boolean {
         when (item?.itemId) {
             android.R.id.home -> {
                 finish()
+            }
+            R.id.action_open_search -> {
+                startActivity<SearchArticlesActivity>()
             }
         }
         return super.onOptionsItemSelected(item)
