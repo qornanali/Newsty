@@ -24,6 +24,11 @@ class ListArticlesAdapter(val list: ArrayList<Article> = ArrayList()) : Recycler
 
     override fun onBindViewHolder(holder: ItemArticleHolder, position: Int) {
         holder.bind(list.get(position))
+        holder.itemView.setOnClickListener { it ->
+            if(onItemClickListener != null){
+                onItemClickListener.onClicked(list.get(position))
+            }
+        }
     }
 
     override fun getItemCount(): Int {

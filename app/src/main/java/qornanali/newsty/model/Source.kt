@@ -1,6 +1,7 @@
 package qornanali.newsty.model
 
 import com.google.gson.annotations.SerializedName
+import java.io.Serializable
 
 data class Source(
         @SerializedName("id") val id: String?,
@@ -10,4 +11,4 @@ data class Source(
         @SerializedName("category") val category: String?,
         @SerializedName("language") val language: String?,
         @SerializedName("country") val country: String?
-)
+) : Serializable

@@ -24,6 +24,9 @@
         <activity
             android:name=".features.listsources.ListSourcesActivity"
             android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".features.detailarticle.DetailArticleActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
     </application>
 
 </manifest>
