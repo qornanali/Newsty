@@ -1,9 +1,29 @@
 <resources>
     <string name="app_name">Newsty</string>
+
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="nav_header_title">Android Studio</string>
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
+
+    <string name="bookmarks">Bookmarks</string>
+    <string name="headlines">Headlines</string>
+    <string name="browse">Browse</string>
+
+    <string name="do_share">Share news</string>
+    <string name="do_mark">Mark news</string>
+    <string name="do_browse">Browse other news</string>
+    <string name="do_choose_sources">Choose news source</string>
+
+    <string-array name="categories">
+        <item>business</item>
+        <item>entertainment</item>
+        <item>general</item>
+        <item>health</item>
+        <item>science</item>
+        <item>sports</item>
+        <item>technology</item>
+    </string-array>
 </resources>
