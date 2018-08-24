@@ -9,6 +9,7 @@ import qornanali.newsty.model.GetArticles
 class HeadlinesPresenter(private val listHeadlinesView: HeadlinesView) {
 
     fun getHeadlineArticles() {
+        listHeadlinesView.loadingData(true)
         doAsync {
             val data = ApiRepository<GetArticles>().requestGet(
                     TheNewsOrg.getTopHeadlines(), GetArticles::class.java)
@@ -17,6 +18,7 @@ class HeadlinesPresenter(private val listHeadlinesView: HeadlinesView) {
                 if(data?.status.equals("ok")){
                     listHeadlinesView.insertListArticles(data?.articles)
                 }
+                listHeadlinesView.loadingData(false)
             }
         }
     }
