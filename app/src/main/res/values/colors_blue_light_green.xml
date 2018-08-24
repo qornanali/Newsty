@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <color name="blg_primary">#2196F3</color>
+  <color name="blg_primary_dark">#1976D2</color>
+  <color name="blg_primary_light">#BBDEFB</color>
+  <color name="blg_accent">#8BC34A</color>
+  <color name="blg_primary_text">#212121</color>
+  <color name="blg_secondary_text">#757575</color>
+  <color name="blg_icons">#FFFFFF</color>
+  <color name="blg_divider">#BDBDBD</color>
+</resources>

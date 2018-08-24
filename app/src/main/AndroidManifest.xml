@@ -9,8 +9,7 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_rounded"
-        android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:supportsRtl="true">
         <activity
             android:name=".features.headlines.HeadlinesActivity"
             android:label="@string/app_name"
@@ -23,10 +22,13 @@
         </activity>
         <activity
             android:name=".features.listsources.ListSourcesActivity"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme2.NoActionBar" />
         <activity
             android:name=".features.detailarticle.DetailArticleActivity"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme2.NoActionBar" />
+        <activity
+            android:name=".features.listarticles.ArticleBySourceActivity"
+            android:theme="@style/AppTheme2.NoActionBar" />
     </application>
 
 </manifest>

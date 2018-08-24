@@ -9,9 +9,11 @@ import android.view.MenuItem
 import android.view.View
 import android.widget.ProgressBar
 import org.jetbrains.anko.find
+import org.jetbrains.anko.startActivity
 import qornanali.newsty.R
 import qornanali.newsty.features.headlines.ListSourcesPresenter
 import qornanali.newsty.features.headlines.ListSourcesView
+import qornanali.newsty.features.listarticles.ArticleBySourceActivity
 import qornanali.newsty.model.Source
 import qornanali.newsty.util.OnItemClickListener
 import qornanali.newsty.util.adapter.ListSourcesAdapter
@@ -62,7 +64,7 @@ class ListSourcesActivity : AppCompatActivity(), ListSourcesView {
 
         adapter = ListSourcesAdapter(sources)
         adapter.setOnItemClickListener(OnItemClickListener {
-            //
+            startActivity<ArticleBySourceActivity>("source" to it)
         })
 
         rvSources.adapter = adapter

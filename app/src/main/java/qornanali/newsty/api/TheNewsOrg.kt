@@ -8,8 +8,9 @@ object TheNewsOrg {
     fun getTopHeadlines(category: String? = "",
                         sources: String? = "",
                         q: String? = "",
-                        pageSize: Int? = 15,
-                        pageNum: Int? = 1): String {
+                        pageSize: Int? = 10,
+                        pageNum: Int? = 1,
+                        country: String = "us"): String {
         return Uri.parse(BuildConfig.BASE_NEWS_API_URL).buildUpon()
                 .appendPath("top-headlines")
                 .appendQueryParameter("category", category)
@@ -17,15 +18,15 @@ object TheNewsOrg {
                 .appendQueryParameter("q", q)
                 .appendQueryParameter("pageSize", pageSize.toString())
                 .appendQueryParameter("pageNum", pageNum.toString())
-                .appendQueryParameter("country", "us")
+                .appendQueryParameter("country", country)
                 .build()
                 .toString()
     }
 
     fun getEverything(sources: String? = "",
-                      sortBy: String? = "relevancy",
+                      sortBy: String? = "publishedAt",
                       q: String? = "",
-                      pageSize: Int? = 15,
+                      pageSize: Int? = 10,
                       pageNum: Int? = 1): String {
         return Uri.parse(BuildConfig.BASE_NEWS_API_URL).buildUpon()
                 .appendPath("everything")
