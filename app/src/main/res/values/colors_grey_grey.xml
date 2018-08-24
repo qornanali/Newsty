@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <color name="cgg_primary">#9E9E9E</color>
+  <color name="cgg_primary_dark">#616161</color>
+  <color name="cgg_primary_light">#F5F5F5</color>
+  <color name="cgg_accent">#9E9E9E</color>
+  <color name="cgg_primary_text">#212121</color>
+  <color name="cgg_secondary_text">#757575</color>
+  <color name="cgg_icons">#212121</color>
+  <color name="cgg_divider">#BDBDBD</color>
+  <color name="cgg_light">#FFF</color>
+</resources>
