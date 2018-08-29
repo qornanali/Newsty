@@ -2,7 +2,7 @@
 
 A sample News Android app using Kotlin
 
-![Image of Screenshot]()
+![Image of Screenshot](https://raw.githubusercontent.com/qornanali/Newsty/master/device-2018-08-29-095717.png)
 
 ## Built With
 
